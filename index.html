@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Home - Dicionário de TI</title>
+</head>
+<body>
+    <header>
+        <h1>Dicionário de TI</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="palavras-adicionadas.html">Palavras Adicionadas</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <section>
+        <h2>Palavras Recentes</h2>
+
+        <button onclick="abrirFormulario()">Adicionar Palavra</button>
+
+        <ul id="lista-palavras">
+            <!-- Lista de palavras será populada dinamicamente -->
+        </ul>
+
+        <!-- Formulário flutuante para adicionar palavras -->
+        <div class="formulario-flutuante" id="formulario">
+            <label for="termo">Palavra:</label>
+            <input type="text" id="termo" name="termo" required>
+
+            <label for="definicao">Definição:</label>
+            <textarea id="definicao" name="definicao" required></textarea>
+
+            <button onclick="adicionarPalavra()">Salvar</button>
+            <button onclick="fecharFormulario()">Cancelar</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

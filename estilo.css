@@ -1,0 +1,88 @@
+/* Reset de estilos padrão do navegador */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005c81;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #368986;
+    color: #fff;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #368986;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #e79a32;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f84339;
+}
+
+/* Formulário flutuante */
+.formulario-flutuante {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 2;
+}
+
+.formulario-flutuante label,
+.formulario-flutuante textarea,
+.formulario-flutuante button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Lista de palavras */
+#lista-palavras li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}

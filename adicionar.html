@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Adicionar Palavra - Dicionário de TI</title>
+</head>
+<body>
+    <header>
+        <h1>Dicionário de TI</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="termos.html">Termos A-Z</a>
+        <a href="adicionar.html">Adicionar Palavra</a>
+        <a href="#">Sobre</a>
+    </nav>
+
+    <section>
+        <h2>Adicionar Palavra</h2>
+
+        <form id="form-adicionar-termo">
+            <label for="termo">Novo Termo:</label>
+            <input type="text" id="termo" name="termo" required>
+
+            <label for="definicao">Definição:</label>
+            <textarea id="definicao" name="definicao" required></textarea>
+
+            <button type="button" onclick="adicionarTermo()">Adicionar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
